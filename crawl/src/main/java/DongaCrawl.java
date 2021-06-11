@@ -15,14 +15,14 @@ import java.util.List;
  */
 public class DongaCrawl {
     private static final String URL_PREFIX = "https://english.etnews.com/news/section.html?id1=";
-    private static final String url_path = "src/main/resources/";
+    private static final String url_path = "crawl/src/main/resources/";
 
 
     public static void main(String[] args) {
 
         ArrayList<String> enUrl_List = new ArrayList<String>();
         // 此处采用相对路径，工程目录默认就可以获取，所以用相对路径获取resources内容
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "crawl/src/main/resources/chromedriver.exe");
         // 1.创建webdriver驱动
         WebDriver driver = new ChromeDriver();
         /*Document doc = null;*/
