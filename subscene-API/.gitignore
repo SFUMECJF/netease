@@ -1,0 +1,4 @@
+subscene-API/__pycache__/
+build/
+dist/
+subsceneAPI.egg-info/
