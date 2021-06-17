@@ -37,7 +37,8 @@ class Subscene:
 								self.__linkToSub = self.__searchBestResult(self.__soupSearch)
 								
 								if (self.__linkToSub == "not-found"):
-									raise Exception("\nerror : !!!!!!Result not found!!!!\n make sure you have entered correct 'title' and 'year'")        
+									print("not found")
+									# raise Exception("\nerror : !!!!!!Result not found!!!!\n make sure you have entered correct 'title' and 'year'")
 									
 								
 								self.__subtitleResponse = self.__getHTML(self.Domain+self.__linkToSub)
